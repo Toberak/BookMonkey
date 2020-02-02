@@ -1,0 +1,17 @@
+import { Thumbnail } from './thumbnail';
+
+
+
+// using an interface for domain models.
+export interface Book {
+
+  isbn: string;
+  title: string;
+  authors: string[];
+  published: Date;
+  subtitle?: string;
+  rating?: number;
+  thumbnails?: Thumbnail[];
+  description?: string;
+
+}
